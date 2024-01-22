@@ -2,6 +2,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebpackPwaManifest = require('webpack-pwa-manifest');
 const path = require('path');
 const { InjectManifest } = require('workbox-webpack-plugin');
+const { GenerateSW } = require('workbox-webpack-plugin');
+
 
 // TODO: Add and configure workbox plugins for a service worker and manifest file.
 // TODO: Add CSS loaders and babel to webpack.
@@ -10,8 +12,8 @@ module.exports = () => {
   return {
     mode: 'development',
     entry: {
-      main: './src/js/index.js',
-      install: './src/js/install.js'
+      main: './assets/js/index.js',
+      install: './assets/js/install.js'
     },
     output: {
       filename: '[name].bundle.js',
@@ -20,14 +22,14 @@ module.exports = () => {
     plugins: [
       new HtmlWebpackPlugin({
         template: './index.html',
-        title: 'TODOs List'
+        title: 'jate'
       }),
 
       new GenerateSW(),
       new WebpackPwaManifest({
-        name: 'TODOs',
-        short_name: 'TODOs',
-        description: 'Keep track of important tasks!',
+        name: 'jate',
+        short_name: 'jate',
+        description: 'Just another text editor',
         background_color: '#7eb4e2',
         theme_color: '#7eb4e2',
         start_url: './',
