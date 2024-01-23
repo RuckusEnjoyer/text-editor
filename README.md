@@ -1,5 +1,43 @@
+
 # Jate: Just Another Text Editor
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+## Description
 
-To whoever is grading this challenge: I know that it is a hot mess. I would love to get advice on how to fix some problems in here, or what the names of things I should be looking up to know what i'm doing are. I'm getting 404 errors with the src-sw.js file and, to be honest, I've used too much of my time trying to figure it out. I'm struggling to understand the material and my tutoring session has been moved to next week. Thanks for your help.
+This is a simple text editor that shows off my ability to make PWA's. I created this editor to create simple markdown in my browser, as well as figuring out how to make an installable app on google chrome.
+    
+## Table of Contents
 
-Most of the code here has been edited from the assignments.
+- [Installation](#Installation)
+- [Usage](#Usage)
+- [License](#License)
+- [Contributing](#Contributing)
+- [Tests](#Tests)
+- [Questions](#Questions)
+    
+## Installation
+
+To install this application, go to the heroku link at the bottom of this ReadMe and click the install button in the top left corner of the website.
+
+## Usage
+    
+To use this application, simply write!
+
+## License
+
+This project is covered under the MIT license. For more information, visit the link below.
+
+[License Link](./LICENSE)
+
+## Contributing
+
+This is an EDX bootcamp assignment - I will not accept contributions at this time.
+    
+## Tests
+
+There is no way to test this application at this time. Sorry!
+    
+## Questions
+
+Have any questions? This is how to contact me:
+
+Github: https://github.com/RuckusEnjoyer
