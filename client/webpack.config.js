@@ -1,7 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebpackPwaManifest = require('webpack-pwa-manifest');
 const path = require('path');
-const { InjectManifest } = require('workbox-webpack-plugin');
 const { GenerateSW } = require('workbox-webpack-plugin');
 
 
@@ -24,8 +23,21 @@ module.exports = () => {
         template: './index.html',
         title: 'jate'
       }),
-
-      new GenerateSW(),
+      new GenerateSW({
+        directoryIndex: 'dist/',
+        // globPatterns: [
+        //   '**/*.{css,woff2,png,svg,jpg,js}'
+        // ],
+        swDest: 'src-sw.js',
+       
+        runtimeCaching: [{
+          handler: 'CacheFirst',
+          urlPattern: /\.(?:html|css|js)$/,
+          options: {
+            cacheName: 'text',
+          }
+        }]
+      }),
       new WebpackPwaManifest({
         name: 'jate',
         short_name: 'jate',
@@ -49,6 +61,10 @@ module.exports = () => {
         {
           test: /\.css$/i,
           use: ['style-loader', 'css-loader'],
+        },
+        {
+          test: /\.(png|svg|jpg|jpeg|gif)$/i,
+          type: 'asset/resource',
         },
         {
           test: /\.m?js$/,

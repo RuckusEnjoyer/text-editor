@@ -4,10 +4,9 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start:dev": "",
-    "start": "",
-    "server": "",
-    "build": "",
+    "dev": "webpack-dev-server",
+    "build": "webpack --mode production",
+    "start": "webpack --watchAll",
     "install": "",
     "client": ""
   },
