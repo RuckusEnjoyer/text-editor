@@ -22,6 +22,8 @@ To install this application, go to the heroku link at the bottom of this ReadMe 
     
 To use this application, simply write!
 
+[Image of Application](./images/Capture.JPG)
+
 ## License
 
 This project is covered under the MIT license. For more information, visit the link below.
@@ -35,6 +37,10 @@ This is an EDX bootcamp assignment - I will not accept contributions at this tim
 ## Tests
 
 There is no way to test this application at this time. Sorry!
+
+## Link
+
+https://tranquil-harbor-22485-1cfbb11e8775.herokuapp.com
     
 ## Questions
 
