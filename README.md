@@ -22,7 +22,7 @@ To install this application, go to the heroku link at the bottom of this ReadMe 
     
 To use this application, simply write!
 
-[Image of Application](./images/Capture.JPG)
+![Image of Application](./images/Capture.JPG)
 
 ## License
 
